@@ -1,0 +1,3 @@
+mkdir -p ~/.vscode/extensions/troll-git-merge
+cp -r . ~/.vscode/extensions/troll-git-merge
+rm -rf ~/.vscode/extensions/troll-git-merge

@@ -1,0 +1,50 @@
+icons => https://octicons.github.com/icon/list-unordered/
+
+npm install -g yo generator-code
+yo code 
+code git-merge-ext
+F5 -> ctrl shift p -> hello world
+
+create empty class EvilGitMerge
+    -> funcao replace
+    -> cria as constantes
+
+create empty class EvilGitMergeController.ts
+    all 
+change extensions.ts
+
+package.json
+    "activationEvents": [
+        "onLanguage:plaintext",
+        "onLanguage:javascript"
+    ],
+run
+
+EvilGitMerge
+    -> replace
+    -> calculateMergeText
+        -    builder.insert(
+                    new Position(0, 0), this.HEADTEXT
+                )
+        -    builder.insert(
+                    new Position(2, 0), this.BODYTEXT
+                )
+        -    builder.insert(
+                    new Position(4, 0), this.FOOTERTEXT
+                )
+run
+   EvilGitMerge
+    add logic
+run 
+
+mkdir -p ~/.vscode/extensions/evil-git-merge
+cp . ~/.vscode/extensions/evil-git-merge
+Ctrl shift P -> reload window, open a file
+rm -rf ~/.vscode/extensions/evil-git-merge
+Ctrl shift P -> reload window
+
+<<<<<<< HEAD
+open an issue
+=======
+ask your question in IRC.
+>>>>>>> branch-a
